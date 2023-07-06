@@ -11,7 +11,7 @@ export default function MainPanel() {
   const managedObjects = useSelector(selectManagedObjects);
   const shownObjects = searchValue ? Object.keys(managedObjects).reduce((currentResults: Record<string, ManagedObject>, currentId: string) => {
     const currentObject: ManagedObject = managedObjects[currentId];
-    if (managedObjects[currentId].name.includes(searchValue)) {
+    if (managedObjects[currentId].name.includes(searchValue) || managedObjects[currentId].description.includes(searchValue)) {
       currentResults[currentId] = currentObject;
     }
     return currentResults;
