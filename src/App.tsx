@@ -30,7 +30,7 @@ function App() {
     <Box width={1} sx={{ display: 'flex', flexDirection: 'column', minHeight: '100vh' }}>
       <Box height="100px" sx={{ display: 'flex', backgroundColor: 'white' }}>
         <Typography variant="h1" style={{ color: '#d2052e' }}>
-          ...S
+          Object Manager
         </Typography>
       </Box>
       <Box sx={{ display: 'flex', flexGrow: 1, padding: 4, backgroundColor: '#ebeaf0', justifyContent: 'center' }}>
